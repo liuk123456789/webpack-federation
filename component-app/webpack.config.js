@@ -27,7 +27,7 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use: ['css-loader']
+        use: ['style-loader', 'css-loader']
       }
     ]
   },
@@ -47,7 +47,10 @@ module.exports = {
       name: 'component_app',
       filename: 'componentEntry.js',
       exposes: {
-        './Federation': './src/components/Federation.vue'
+        './Federation': './src/components/Federation.vue',
+      },
+      shared: {
+        vue: { singleton: true, eager: true }
       }
     })
   ]

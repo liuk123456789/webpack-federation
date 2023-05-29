@@ -19,12 +19,15 @@
     "lib"
   ],
   "devDependencies": {
+    "@arco-design/web-vue": "^2.46.0",
     "@babel/core": "^7.21.4",
     "@babel/preset-env": "^7.21.4",
     "babel-loader": "^8.2.2",
     "concurrently": "^6.1.0",
     "css-loader": "^5.2.4",
     "html-webpack-plugin": "^5.3.1",
+    "install": "^0.13.0",
+    "npm": "^9.6.7",
     "serve": "^11.3.2",
     "style-loader": "^2.0.0",
     "url-loader": "^4.1.1",

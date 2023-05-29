@@ -19,6 +19,7 @@
     "start": "concurrently \"npm run webpack\" \"npm run serve\""
   },
   "devDependencies": {
+    "@arco-design/web-vue": "^2.46.0",
     "@babel/core": "^7.21.4",
     "@babel/preset-env": "^7.21.4",
     "babel-loader": "^8.2.2",

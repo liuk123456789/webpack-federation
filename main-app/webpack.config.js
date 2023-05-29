@@ -27,7 +27,7 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use: ['css-loader']
+        use: ['style-loader', 'css-loader']
       }
     ]
   },
@@ -47,6 +47,9 @@ module.exports = {
       name: 'main_app',
       remotes: {
         'component-app': 'component_app@http://localhost:3020/componentEntry.js'
+      },
+      shared: {
+        vue: { singleton: true, eager: true }
       }
     })
   ]
